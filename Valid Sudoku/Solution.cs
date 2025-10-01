@@ -26,6 +26,7 @@ public class Solution
 
                 //Check if row, column or current box contains the value we are
                 //trying to add into the current cell
+                //boxes[boxIdx] -> has this number already appeared in current 3x3
                 if (rows[r].Contains(val) || cols[c].Contains(val) || boxes[boxIdx].Contains(val))
                 {
                     return false;
